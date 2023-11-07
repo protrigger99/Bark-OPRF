@@ -174,7 +174,6 @@ mpn/*.c
 mpn/*.as
 mpn/*.asm
 Makefile
-mpir.h
 config.h
 config.m4
 config.log

@@ -2,3 +2,4 @@ Release
 bin.v2
 
 /deps
+.o
