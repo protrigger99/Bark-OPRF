@@ -3,3 +3,26 @@ bin.v2
 
 /deps
 .o
+thirdparty/linux/mpir/yasm/gas-token.c
+thirdparty/linux/mpir/yasm/genmacro
+thirdparty/linux/mpir/yasm/genmodule
+thirdparty/linux/mpir/yasm/genperf
+thirdparty/linux/mpir/yasm/genstring
+thirdparty/linux/mpir/yasm/genversion
+thirdparty/linux/mpir/yasm/lc3bid.c
+thirdparty/linux/mpir/yasm/license.c
+thirdparty/linux/mpir/yasm/module.c
+thirdparty/linux/mpir/yasm/nasm-macros.c
+thirdparty/linux/mpir/yasm/nasm-token.c
+thirdparty/linux/mpir/yasm/nasm-version.c
+thirdparty/linux/mpir/yasm/re2c
+thirdparty/linux/mpir/yasm/version.mac
+thirdparty/linux/mpir/yasm/vsyasm
+thirdparty/linux/mpir/yasm/win64-gas.c
+thirdparty/linux/mpir/yasm/win64-nasm.c
+thirdparty/linux/mpir/yasm/x86cpu.c
+thirdparty/linux/mpir/yasm/x86insn_gas.c
+thirdparty/linux/mpir/yasm/x86insn_nasm.c
+thirdparty/linux/mpir/yasm/x86regtmod.c
+thirdparty/linux/mpir/yasm/yasm
+thirdparty/linux/mpir/yasm/ytasm
