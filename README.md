@@ -30,15 +30,23 @@ bOPRFmain #inside container
 
 ### Building the Project
 After cloning project from git,
-##### Windows:
-1. build bOPRFlib project
-2. add argument for bOPRFmain project (for example: -t)
-3. run bOPRFmain project
 
 ##### Linux:
-1. make
-2. for test:
-	./Release/bOPRFmain.exe -t
+
+```bash
+cd BaRK-OPRF
+git submodule update --init --recursive
+
+cd thirdparty/linux/cryptopp
+git apply ../cryptopp.diff .
+make -j8
+
+cd ../boost
+./bootstrap.sh
+./b2 stage --with-system --with-thread --with-filesystem link=static -mt
+
+
+```
 
 ## Test
 
