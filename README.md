@@ -45,8 +45,18 @@ cd ../boost
 ./bootstrap.sh
 ./b2 stage --with-system --with-thread --with-filesystem link=static -mt
 
+cd ../miracl/miracl_osmt/source
+bash linux64_cpp
 
+cd ../../../mpir
+./configure
+make -j8
+
+cd ../../../
+make -j8
 ```
+
+The compile artifacts are located under `Release/`
 
 ## Test
 
