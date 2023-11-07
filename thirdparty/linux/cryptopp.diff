@@ -1,0 +1,37 @@
+diff --git a/misc.h b/misc.h
+index f6e5b076..f44d411e 100644
+--- a/misc.h
++++ b/misc.h
+@@ -379,26 +379,26 @@ template <class T, class F, int instance>
+ 
+ /// \brief Create a pointer with an offset
+ /// \tparam PTR a pointer type
+-/// \tparam OFF a size type
++/// \tparam OFFSET a size type
+ /// \param pointer a pointer
+ /// \param offset a offset into the pointer
+ /// \details PtrAdd can be used to squash Clang and GCC
+ ///  UBsan findings for pointer addition and subtraction.
+-template <typename PTR, typename OFF>
+-inline PTR PtrAdd(PTR pointer, OFF offset)
++template <typename PTR, typename OFFSET>
++inline PTR PtrAdd(PTR pointer, OFFSET offset)
+ {
+ 	return pointer+static_cast<ptrdiff_t>(offset);
+ }
+ 
+ /// \brief Create a pointer with an offset
+ /// \tparam PTR a pointer type
+-/// \tparam OFF a size type
++/// \tparam OFFSET a size type
+ /// \param pointer a pointer
+ /// \param offset a offset into the pointer
+ /// \details PtrSub can be used to squash Clang and GCC
+ ///  UBsan findings for pointer addition and subtraction.
+-template <typename PTR, typename OFF>
+-inline PTR PtrSub(PTR pointer, OFF offset)
++template <typename PTR, typename OFFSET>
++inline PTR PtrSub(PTR pointer, OFFSET offset)
+ {
+ 	return pointer-static_cast<ptrdiff_t>(offset);
+ }

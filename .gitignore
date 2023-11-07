@@ -196,9 +196,6 @@ ModelManifest.xml
 /thirdparty/win/getNTL.ps1
 /thirdparty/linux/NTL/
 /thirdparty/linux/NTL_patch/
-/thirdparty/linux/cryptopp/
-/thirdparty/linux/boost/
-/thirdparty/linux/mpir/
 /thirdparty/linux/getNTL.ps1
 
 kProbe_*
