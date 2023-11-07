@@ -74,8 +74,8 @@ namespace bOPRF
 
 
 		typedef u64 result_type;
-		static u64 min() { return 0; }
-		static u64 max() { return (u64)-1; }
+		constexpr static u64 min() { return 0; }
+		constexpr static u64 max() { return (u64)-1; }
 		u64 operator()() {
 			return get_u64();
 		}
