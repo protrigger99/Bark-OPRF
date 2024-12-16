@@ -47,6 +47,23 @@ execcmd.c: In function ‘onintr’:
 execcmd.c:120:5: warning: implicit declaration of function ‘out_printf’ [-Wimplicit-function-declaration]
   120 |     out_printf( "...interrupted\n" );
       |     ^~~~~~~~~~
+execcmd.c: In function ‘argv_from_shell’:
+execcmd.c:54:22: warning: ‘%d’ directive writing between 1 and 11 bytes into a region of size 4 [-Wformat-overflow=]
+   54 |     sprintf( jobno, "%d", slot + 1 );
+      |                      ^~
+execcmd.c:54:21: note: directive argument in the range [-2147483647, 2147483647]
+   54 |     sprintf( jobno, "%d", slot + 1 );
+      |                     ^~~~
+In file included from /usr/include/stdio.h:894,
+                 from jam.h:340,
+                 from execcmd.c:11:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 2 and 12 bytes into a destination of size 4
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
 make.c: In function ‘make’:
 make.c:132:13: warning: implicit declaration of function ‘out_printf’ [-Wimplicit-function-declaration]
   132 |             out_printf( "...found %d target%s...\n", counts->targets,
